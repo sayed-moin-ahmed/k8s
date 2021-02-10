@@ -4,7 +4,7 @@ metadata:
   name: kubia-gpu
 spec:
   nodeSelector:
-    gpu: true
+    gpu: "true"
    containers:
    - image: s3dm2na3d/kubia
      name: kubia
