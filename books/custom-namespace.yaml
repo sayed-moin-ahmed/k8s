@@ -1,4 +1,0 @@
-apiVerson: v1
-kind: Namespace
-metadata:
-  name: custom-namespace
