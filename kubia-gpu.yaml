@@ -1,4 +1,4 @@
-apiVerson: v1
+apiVersion: v1
 kind: Pod
 metadata:
   name: kubia-gpu
@@ -6,5 +6,5 @@ spec:
   nodeSelector:
     gpu: "true"
   containers:
-  - image: s3dm2na3d/kubia
+  - image: luksa/kubia
     name: kubia
