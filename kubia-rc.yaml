@@ -1,1 +1,21 @@
 
+apiVersion: v1
+kind: ReplicationController
+metadata: 
+  name: kubia
+spec:
+  replicas: 3
+  selector:
+    app: kubia
+  template:
+    metadata:
+      labels:
+        app: kubia
+    spec:
+      containers:
+      - name: kubia
+        image: s3dm2na3d/kubia
+        ports:
+        - containerPort: 8080
+    
+    
