@@ -1,4 +1,4 @@
-apiVersion: apps/v1beta2
+apiVersion: apps/v1beta1
 kind: ReplicaSet
 metadata:
   name: kubia
@@ -11,8 +11,8 @@ spec:
     metadata:
       labels:
         app: kubia
-      spec:
-        containers:
-        - name: kubia
-          image: s3dm2na3d/kubia
+    spec:
+      containers:
+      - name: kubia
+        image: luksa/kubia
           
