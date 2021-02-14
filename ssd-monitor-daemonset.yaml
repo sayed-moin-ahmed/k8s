@@ -1,4 +1,4 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: ssd-monitor
@@ -9,10 +9,10 @@ spec:
   template:
     metadata:
       labels:
-          app: ssd-monitor
-     spec:
-        nodeSelector:
-          disk: ssd
-        containers:
-        - image: s3dm2na3d/ssd-monitor
-          name: main
+        app: ssd-monitor
+    spec:
+      nodeSelector:
+        disk: ssd
+      containers:
+        - name: main
+          image: s3dm2na3d/ssd-monitor
