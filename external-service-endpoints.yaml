@@ -6,4 +6,4 @@ subsets:
   - addresses:
     - ip: 10.0.1.47
     ports:
-    - port: 8080
+    - port: 80
