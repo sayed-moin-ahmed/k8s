@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Endpoints
-metadata: 
+metadata:
   name: external-service
 subsets:
   - addresses:
-    -ip: 10.0.1.47
+    - ip: 10.0.1.47
     ports:
-    - port:80
+    - port: 80
