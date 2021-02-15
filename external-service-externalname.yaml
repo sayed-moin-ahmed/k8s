@@ -4,6 +4,6 @@ metadata:
   name: external-service
 spec:
   type: ExternalName
-  externalName: someapi.somecompany.com
+  externalName: test.s3dm2na3d.com
   ports:
   - port: 80
