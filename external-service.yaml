@@ -5,5 +5,4 @@ metadata:
 spec:
   ports:
   - port: 80
-  selector:
-    app: kubia
+
