@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: kubia1
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: kubia1
+  template:
+    metadata:
+      labels:
+        app: kubia1
+    spec:
+      containers:
+      - name: kubia
+        image: s3dm2na3d/kubia
