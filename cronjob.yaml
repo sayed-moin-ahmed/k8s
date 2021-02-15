@@ -1,17 +1,17 @@
-appVersion: batch/v1beta1
+apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
   name: batch-job-every-fifteen-minutes
 spec:
-  schedule: "0, 15, 30, 45 * * * *"
+  schedule: "0,15,30,45 * * * *"
   jobTemplate:
     spec:
       template:
         metadata:
           labels:
             app: periodic-batch-job
-          spec:
-            restartPolicy: OnFailure
-            containers:
-            - name: main
-              image: s3dm2na3d/batch-job
+        spec:
+          restartPolicy: OnFailure
+          containers:
+          - name: main
+            image: s3dm2na3d/batch-job
