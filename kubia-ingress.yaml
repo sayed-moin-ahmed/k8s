@@ -4,10 +4,10 @@ metadata:
   name: kubia
 spec:
   rules:
-  - host: kubia.example.com
-    http:
-      paths:
-      - path: /
-          backend:
-            serviceName: kubia-nodeport
-            servicePort: 80
+    - host: kubia.example.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: kubia-loadbalancer
+              servicePort: 80
