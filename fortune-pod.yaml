@@ -4,17 +4,17 @@ metadata:
   name: fortune
 spec:
   containers:
-  - image: s3dm2na3d/fortune
+  - image: luksa/fortune
     name: html-generator
     volumeMounts:
     - name: html
       mountPath: /var/htdocs
   - image: nginx:alpine
-    name: web-servers
+    name: web-server
     volumeMounts:
-      - name: html
-        mountPath: /usr/share/nginx/html
-        readOnly: true
+    - name: html
+      mountPath: /usr/share/nginx/html
+      readOnly: true
     ports:
     - containerPort: 80
       protocol: TCP
