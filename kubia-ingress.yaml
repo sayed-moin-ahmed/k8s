@@ -8,9 +8,9 @@ spec:
     http:
       - path: /kubia
         backend:
-          serviceName: kubia
+          serviceName: kubia1-nodeport
           servicePort: 80
       - path: /foo
         backend:
-          serviceName: kubia1
+          serviceName: kubia-loadbalancer
           servicePort: 80
