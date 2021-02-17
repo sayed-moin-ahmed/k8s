@@ -6,9 +6,11 @@ spec:
   rules:
   - host: kubia.example.com
     http:
-      paths:
-      - path: /
+      - path: /kubia
         backend:
-          serviceName: kubia-loadbalancer
+          serviceName: kubia
           servicePort: 80
-      
+      - path: /foo
+        backend:
+          serviceName: kubia1
+          servicePort: 80
