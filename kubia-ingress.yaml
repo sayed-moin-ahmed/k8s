@@ -11,3 +11,7 @@ spec:
             backend:
               serviceName: kubia-loadbalancer
               servicePort: 80
+          - path: /foo
+            backend:
+              serviceName: kubia-nodeport
+              servicePort: 80
