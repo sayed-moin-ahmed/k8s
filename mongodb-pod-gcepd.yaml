@@ -8,7 +8,7 @@ spec:
     gcePersistentDisk:
       pdName: mongodb
       fsType: ext4
- containers:
+  containers:
   - image: mongo
     name: mongodb
     volumeMounts:
@@ -17,4 +17,3 @@ spec:
     ports:
     - containerPort: 27017
       protocol: TCP
-  
