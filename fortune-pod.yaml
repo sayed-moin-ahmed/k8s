@@ -20,5 +20,5 @@ spec:
       protocol: TCP
   volumes:
   - name: html
-    emptyDir: {}
+    emptyDir: 
       medium: Memory
