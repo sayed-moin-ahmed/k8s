@@ -5,4 +5,5 @@ metadata:
 spec:
   containers:
   - image: s3dm2na3d/fortune:args
+    name: fortuneargs
     args: ["2"]
