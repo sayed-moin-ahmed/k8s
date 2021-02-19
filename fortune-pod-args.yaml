@@ -6,5 +6,3 @@ spec:
   containers:
   - image: s3dm2na3d/fortune:args
     args: ["2"]
-  
-  
