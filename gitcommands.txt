@@ -53,6 +53,8 @@ git commit -m "My message"
 Stash it.
 Stashing acts as a stack, where you can push changes, and you pop them in reverse order.
 
+
+
 To stash, type
 
 git stash
@@ -67,3 +69,5 @@ Or: Discard local changes for a specific file
 using git checkout filename
 
  kubectl create configmap my-config4 --from-file=.
+ 
+ kubectl create configmap my-config  --from-file=foo.json  --from-file=bar=foobar.conf  --from-file=. --from-literal=some=thing
