@@ -1,0 +1,69 @@
+To list all the containers in a Kubernetes Pod, execute:
+
+$ kubectl get pod <pod_name> -o jsonpath='{.spec.containers[*].name}{"\n"}'
+Login to a particular container in the Pod:
+
+$ kubectl exec -it <pod_name> -c <container_name> /bin/bash
+Login to a Pod in another Namespace:
+
+$ kubectl exec -it <pod_name> -n <namespace> /bin/bash
+
+npm install -g yaml-lint
+yamllint filename 
+
+
+kubectl create -f https://github.com/sayed-moin-ahmed/k8s/blob/develop/kubia-manual.yaml
+gh repo clone sayed-moin-ahmed/k8s
+git pull https://github.com/sayed-moin-ahmed/k8s.git
+
+git init
+git config user.name "sayed-moin-ahmed"
+git config user.email "sayed.moin.85@gmail.com"
+git add *
+git commit -m "some init msg"
+
+
+I made a branch called 'f' and did a checkout to master. When I tried the git pull command I got this message:
+
+You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you can merge.
+https://stackoverflow.com/questions/11646107/you-have-not-concluded-your-merge-merge-head-exists
+OK. The problem is your previous pull failed to merge automatically and went to conflict state. And the conflict wasn't resolved properly before the next pull.
+
+Undo the merge and pull again.
+
+To undo a merge:
+
+git merge --abort [Since git version 1.7.4]
+
+git reset --merge [prior git versions]
+
+Resolve the conflict.
+
+Don't forget to add and commit the merge.
+
+git pull now should work fine.
+
+You can't merge with local modifications. Git protects you from losing potentially important changes.
+
+You have three options:
+
+Commit the change using
+git commit -m "My message"
+Stash it.
+Stashing acts as a stack, where you can push changes, and you pop them in reverse order.
+
+To stash, type
+
+git stash
+Do the merge, and then pull the stash:
+
+git stash pop
+Discard the local changes
+using git reset --hard
+or git checkout -t -f remote/branch
+
+Or: Discard local changes for a specific file
+using git checkout filename
+
+ kubectl create configmap my-config4 --from-file=.
