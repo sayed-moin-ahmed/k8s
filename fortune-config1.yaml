@@ -3,5 +3,5 @@ data:
   sleep-interval: "25"
 kind: ConfigMap
 metadata:
-  name: fortune-config
+  name: fortune-config1
   namespace: default
