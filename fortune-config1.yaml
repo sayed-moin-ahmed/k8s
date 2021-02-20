@@ -1,6 +1,8 @@
 apiVersion: v1
 data:
   sleep-interval: "25"
+  foo: bar
+  one: two
 kind: ConfigMap
 metadata:
   name: fortune-config1
