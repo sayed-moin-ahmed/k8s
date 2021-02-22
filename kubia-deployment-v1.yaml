@@ -11,7 +11,7 @@ spec:
         app: kubia
     spec:
       containers:
-      - image: luksa/kubia:v1
+      - image: s3dm2na3d/kubia:v1
         name: nodejs
   selector:
     matchLabels:
