@@ -9,7 +9,10 @@ spec:
       name: kubia
       labels:
         app: kubia
-  spec:
-    containers:
-    - image: s3dm2na3d/kubia:v1
-      name: nodejs
+    spec:
+      containers:
+      - image: luksa/kubia:v1
+        name: nodejs
+  selector:
+    matchLabels:
+      app: kubia
