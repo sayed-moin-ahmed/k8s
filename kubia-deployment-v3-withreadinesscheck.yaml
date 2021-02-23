@@ -17,7 +17,7 @@ spec:
         app: kubia
     spec:
       containers:
-      - image: luksa/kubia:v3
+      - image: s3dm2na3d/kubia:v4
         name: nodejs
         readinessProbe:
           periodSeconds: 1
