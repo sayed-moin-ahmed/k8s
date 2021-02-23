@@ -24,3 +24,6 @@ spec:
           httpGet:
             path: /
             port: 8080
+  selector:
+    matchLabels:
+      app: kubia
